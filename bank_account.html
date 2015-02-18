@@ -19,16 +19,16 @@
         </div>
         <div class="col-md-3">
           <h3>Sign up for a bank account:</h3>
-          <form id="accountForm" class="form-inline">
+          <form id="accountForm" class="">
             <div class="form-group">
               <label for="name">Your Name</label>
               <input id="name" class="form-control">
 
               <label for="initialDeposit">Initial Deposit</label>
-              <input id="initalDeposit" class="form-control">
+              <input id="initialDeposit" class="form-control">
 
             </div>
-              <button type="submit">Create Bank Account</button>
+              <button type="submit" class="btn btn-success">Create Bank Account</button>
           </form>
         </div>
         <div class="col-md-1">
@@ -36,16 +36,16 @@
         </div>
         <div class="col-md-4">
         <h3>Deposit or withdraw money:</h3>
-          <form id="transactionForm" class="form-inline">
+          <form id="transactionForm" class="">
             <div class="form-group">
               <label for="deposit">Deposit Amount</label>
-              <input id="deposit" class="form-control">
+              <input id="deposit" class="form-control" value="0">
 
               <label for="withdraw">Withdraw Amount</label>
-              <input id="withdraw" class="form-control">
+              <input id="withdraw" class="form-control" value="0">
 
             </div>
-              <button type="submit">Submit</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
         <div class="col-md-2">
@@ -57,6 +57,9 @@
         </div>
         <div class="col-md-6">
           <h3>Your Account's Balance:</h3>
+          <div class="well">
+            <h2>$ <span id="currentBalance"></span></h2>
+          </div>
         </div>
         <div class="col-md-3">
         </div>
